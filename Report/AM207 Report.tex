@@ -13,7 +13,6 @@
 
 \usepackage{setspace}
 	% package that allows you to change spacing
-
 \onehalfspacing
 	% text become 1.5 spaced
 
@@ -72,7 +71,7 @@
 
 \textsc{\Huge AM 207 Final Project}\\[1.5cm] % Name of your university/college
 \textsc{\LARGE Now I See You}\\[0.5cm] % Major heading such as course name
-\textsc{\Large Sensor Based Singer User Activity Recognition}\\[3cm] % Minor heading such as course title
+\textsc{\Large Sensor Based Single User Activity Recognition}\\[3cm] % Minor heading such as course title
  
 %----------------------------------------------------------------------------------------
 %	AUTHOR SECTION
@@ -95,7 +94,7 @@ Yuhan \textsc{Tang}
 \end{titlepage}
 
 \section{Introduction}
-Activity Recognition, which identifies the activity (eg. cooking, sleeping, reading) that a user performs from a series of observations, is an active research area because it has many real-life applications such as healthcare and intelligent environments. In our project, to simplify the problem, we used sensor based singer user data instead of some complex activities data involved multiple users. Recognize activities from sensor data poses the following challenges. First, there is an ambiguity of interpretation. The interpretation of similar observed sensor data may be different. For example, 'cooking' and 'cleaning fridge' both involve opening the fridge. Second, same activity may be performed in different ways. Third, from the observed sensor data, it is hard to see when one activity ends and another one starts. In this project, we implemented Naive Bayes Model, First Order HMM(Hidden Markov Model) and Second Order HMM to tackle these issues and tested their performance on several real world datasets. Besides models, different feature representations were tried to further improve the performance. 
+Activity Recognition, which identifies the activity (eg. cooking, sleeping, reading) that a user performs from a series of observations, is an active research area because it has many real-life applications such as healthcare and intelligent environments. In our project, to simplify the problem, we used sensor based single user data instead of some complex activities data involved multiple users. Recognize activities from sensor data poses the following challenges. First, there is an ambiguity of interpretation. The interpretation of similar observed sensor data may be different. For example, 'cooking' and 'cleaning fridge' both involve opening the fridge. Second, same activity may be performed in different ways. Third, from the observed sensor data, it is hard to see when one activity ends and another one starts. In this project, we implemented Naive Bayes Model, First Order HMM(Hidden Markov Model) and Second Order HMM to tackle these issues and tested their performance on several real world datasets. Besides models, different feature representations were tried to further improve the performance. 
 
 \section{Data}
 In this project, supervised machine learning models were used for recognition of users' activity, therefore, labeled training data from sensors had to be collected. We used three online datasets with single user activity recorded in different houses. Sensors were installed in different places inside the house to gather the data needed for recognition. The floor plan of different houses is as following. The red boxes represent sensor nodes. It gives 1 when the sensor is firing and a 0 otherwise. 
