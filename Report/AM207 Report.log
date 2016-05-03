@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 MAY 2016 22:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 MAY 2016 14:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -849,76 +849,70 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 File: NB.png Graphic file (type png)
 
 <use NB.png>
-Package pdftex.def Info: NB.png used on input line 126.
+Package pdftex.def Info: NB.png used on input line 129.
 (pdftex.def)             Requested size: 199.16928pt x 109.37509pt.
-
-Overfull \hbox (8.85114pt too wide) in paragraph at lines 126--129
-[] \OT1/ppl/m/n/10 Be-sides the con-di-tional in-de-pen-dence as-sump-tion, Nai
-ve Bayes
- []
-
-[3 <./NB.png>] <sleeping_prior.png, id=76, 2445.135pt x 1140.26pt>
+ [3 <./NB.png>]
+<sleeping_prior.png, id=77, 2445.135pt x 1140.26pt>
 File: sleeping_prior.png Graphic file (type png)
-
-<use sleeping_prior.png>
-Package pdftex.def Info: sleeping_prior.png used on input line 140.
+ <use sleeping_prior.png>
+Package pdftex.def Info: sleeping_prior.png used on input line 144.
 (pdftex.def)             Requested size: 512.1496pt x 238.8353pt.
 
-Overfull \hbox (42.39458pt too wide) in paragraph at lines 140--141
+Overfull \hbox (42.39458pt too wide) in paragraph at lines 144--145
  [][] 
  []
 
-<NB_result.png, id=77, 844.15375pt x 317.185pt>
+<NB_result.png, id=78, 844.15375pt x 317.185pt>
 File: NB_result.png Graphic file (type png)
  <use NB_result.png>
-Package pdftex.def Info: NB_result.png used on input line 145.
+Package pdftex.def Info: NB_result.png used on input line 150.
 (pdftex.def)             Requested size: 512.1496pt x 192.44199pt.
 
-Overfull \hbox (42.39458pt too wide) in paragraph at lines 145--146
+Overfull \hbox (42.39458pt too wide) in paragraph at lines 150--151
  [][] 
  []
 
-<1hmm.png, id=78, 308.352pt x 167.1846pt>
+<1hmm.png, id=79, 308.352pt x 167.1846pt>
 File: 1hmm.png Graphic file (type png)
  <use 1hmm.png>
-Package pdftex.def Info: 1hmm.png used on input line 147.
+Package pdftex.def Info: 1hmm.png used on input line 155.
 (pdftex.def)             Requested size: 199.16928pt x 107.98756pt.
  [4 <./sleeping_prior.png> <./NB_result.png>]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 150.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 160.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 150.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 160.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 150.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 160.
 
-<2hmm.png, id=86, 256.96pt x 106.3975pt>
+<2hmm.png, id=87, 256.96pt x 106.3975pt>
 File: 2hmm.png Graphic file (type png)
  <use 2hmm.png>
-Package pdftex.def Info: 2hmm.png used on input line 162.
+Package pdftex.def Info: 2hmm.png used on input line 176.
 (pdftex.def)             Requested size: 199.16928pt x 82.47018pt.
  [5 <./1hmm.png>]
-<feature.png, id=92, 32.37291pt x 7.52417pt>
+<feature.png, id=94, 32.37291pt x 7.52417pt>
 File: feature.png Graphic file (type png)
  <use feature.png>
-Package pdftex.def Info: feature.png used on input line 176.
+Package pdftex.def Info: feature.png used on input line 192.
 (pdftex.def)             Requested size: 398.33858pt x 92.66565pt.
  [6 <./2hmm.png> <./feature.png>] [7] [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 206.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 206.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
  (./AM207 Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 206.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 206.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `"AM207 Report".out' has not changed.
 (rerunfilecheck)             Checksum: E9A8FCF8EE1378D67082ED09DCAC6B64;575.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 206.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
- 18886 strings out of 493089
- 346266 string characters out of 6134842
+ 18889 strings out of 493089
+ 346314 string characters out of 6134842
  412094 words of memory out of 5000000
  21964 multiletter control sequences out of 15000+600000
  33640 words of font info for 85 fonts, out of 8000000 for 9000
@@ -932,10 +926,10 @@ ive/2015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2
 texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/urw/palatino/uplri8a.pfb>
-Output written on "AM207 Report.pdf" (9 pages, 1001127 bytes).
+Output written on "AM207 Report.pdf" (9 pages, 1002662 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
+ 145 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
  130 words of extra memory for PDF output out of 10000 (max. 10000000)
 

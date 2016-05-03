@@ -123,7 +123,11 @@ Then the estimation is given by:
 $$\hat{\mu}_{ni} = \frac{\sum_{t=1}^T x_{tn}\mathbf{1}\{y_t=i\}}{\sum_{t=1}^T \mathbf{1}\{y_t=i\}}$$
 The MLE estimator considers the parameter to be a constant and estimates a value that provide maximum support for the data.
 
-\subsection{Naive Bayes Model}\includegraphics[width=7cm]{NB}
+\subsection{Naive Bayes Model}
+\begin{figure}[h]
+    \centering
+\includegraphics[width=7cm]{NB}
+\end{figure}
 Besides the conditional independence assumption, Naive Bayes Model also assumes all data points are independently and identically distributed, that is it doesn't consider the correlation between data points. 
 The joint probability over the testing data points:
 $$P(X_{1:T}|Y_{1:T})= \prod_{t=1}^T P(x_t|y_t)P(y_t)= \prod_{t=1}^T\prod_{n=1}^N\prod_{i=1}^D P(x_{tn}|y_t = i)P(y_t=i)$$
@@ -133,18 +137,24 @@ MLE estimates for $\pi_{ti}$ are
 $$\hat{\pi}_{ti} = \frac{|S\{y_t=i\}|} {|S|}$$
 where $|S|$ denotes the number of elements in the training set S.\\
 By maximizing the product of the joint probability with respect to $y_{1:T} = \{y_1,y_2,...,y_T\}$ over the data points, we could find a mapping between the observation data $x_{1:T} = \{x_1,x_2,...x_T\}$ and a sequence of activity labels $y_{1:T} = \{y_1,y_2,...,y_T\}$.
-\newpage
+
 To give you a sense of how the prior distribution looks like, we plot the prior probability $P(y= sleeping)$ over different time slots as below: \\
 \begin{figure}[h]
     \centering
     \includegraphics[width=18cm]{sleeping_prior}
 \end{figure}\\
 To visualize the performance of this Naive Bayes model, we plotted the prior probability, posterior probability and true probability of the activity 'go to bed' during different hours using our testing data. This plot could show us how did Naive Bayes model improved the prediction by taking observed sensor data into account.
+
 \begin{figure}[h]
     \centering
     \includegraphics[width=18cm]{NB_result}
 \end{figure}
-\subsection{First Order HMM (Hidden Markov Model)}\includegraphics[width=7cm]{1hmm}
+\subsection{First Order HMM (Hidden Markov Model)}
+\begin{figure}[h]
+    \centering
+\includegraphics[width=7cm]{1hmm}
+\end{figure}
+
 In Naive Bayes model, we assumes all data points are independently and identically distributed. However, it is not true. The data we have are time series data and there exists a temporal correlation between consecutive time slices. A Hidden Markov Model (HMM) can be used to explore this scenario. In an HMM model, we have a series of observed outputs $X={x_1, x_2, ...,x_t}$ drawn from a series of hidden state $Y={y_1, y_2, ..,y_t}$. In this problem, X should be the observed sensor states and Y should be the activity states. The First Order HMM relies on the following three assumptions:
 \begin{itemize}
 \item \textbf{Limited Horizon Assumption:} the probability of being in a hidden state at time t depends only on the hidden state at time t-1.
@@ -159,7 +169,13 @@ where A is the transition matrix and B is the emission matrix. To simplify the n
 $$\hat{a}_{ij} = \frac{\sum_{t=1}^T \mathbf{1}\{y_t=j\}\mathbf{1}\{y_{t-1}=i\}}{\sum_{t=1}^T \mathbf{1}\{y_{t-1}=i\}}$$
 To solve the argmax equation, naively, we could try every possible assignment to Y and take the one with highest value of joint probability. However, it would require $\mathcal{O}(|Y|^T)$ operations. So instead, we used a dynamic programming algorithm called Viterbi to solve this equation. 
 
-\subsection{Second Order HMM (Hidden Markov Model)}\includegraphics[width=7cm]{2hmm}
+\subsection{Second Order HMM (Hidden Markov Model)}
+
+\begin{figure}[h]
+    \centering
+\includegraphics[width=7cm]{2hmm}
+\end{figure}
+
 The order of a HMM is the length of history upon which the probabilities of the possible values of the next state depend. The only difference between 1st and 2nd order HMM is that 2nd order HMM depends upon the two previous states. Thus, the probability of transitioning to a new state depends not only on the current state, but also on the previous state. This allows a more realistic context dependence.
 
 We could rewrite our likelihood as following:
