@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 MAY 2016 16:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 MAY 2016 16:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -852,21 +852,21 @@ File: NB.png Graphic file (type png)
 Package pdftex.def Info: NB.png used on input line 129.
 (pdftex.def)             Requested size: 199.16928pt x 109.37509pt.
  [3 <./NB.png>]
-<sleeping_prior.png, id=77, 2445.135pt x 1140.26pt>
+<sleeping_prior.png, id=77, 2374.8725pt x 985.6825pt>
 File: sleeping_prior.png Graphic file (type png)
  <use sleeping_prior.png>
 Package pdftex.def Info: sleeping_prior.png used on input line 144.
-(pdftex.def)             Requested size: 512.1496pt x 238.8353pt.
+(pdftex.def)             Requested size: 512.1496pt x 212.56433pt.
 
 Overfull \hbox (42.39458pt too wide) in paragraph at lines 144--145
  [][] 
  []
 
-<NB_result.png, id=78, 844.15375pt x 317.185pt>
+<NB_result.png, id=78, 2374.8725pt x 985.6825pt>
 File: NB_result.png Graphic file (type png)
  <use NB_result.png>
 Package pdftex.def Info: NB_result.png used on input line 150.
-(pdftex.def)             Requested size: 512.1496pt x 192.44199pt.
+(pdftex.def)             Requested size: 512.1496pt x 212.56433pt.
 
 Overfull \hbox (42.39458pt too wide) in paragraph at lines 150--151
  [][] 
@@ -889,18 +889,18 @@ LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 160.
 
-<2hmm.png, id=87, 256.96pt x 106.3975pt>
+<2hmm.png, id=88, 256.96pt x 106.3975pt>
 File: 2hmm.png Graphic file (type png)
  <use 2hmm.png>
 Package pdftex.def Info: 2hmm.png used on input line 176.
 (pdftex.def)             Requested size: 199.16928pt x 82.47018pt.
  [5 <./1hmm.png>]
-<feature.png, id=94, 32.37291pt x 7.52417pt>
+<feature.png, id=95, 32.37291pt x 7.52417pt>
 File: feature.png Graphic file (type png)
  <use feature.png>
 Package pdftex.def Info: feature.png used on input line 192.
 (pdftex.def)             Requested size: 398.33858pt x 92.66565pt.
- [6 <./2hmm.png> <./feature.png>] <result.png, id=103, 834.11626pt x 461.725pt>
+ [6 <./2hmm.png> <./feature.png>] <result.png, id=104, 834.11626pt x 461.725pt>
 File: result.png Graphic file (type png)
 
 <use result.png>
@@ -936,9 +936,9 @@ ive/2015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2
 texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/urw/palatino/uplri8a.pfb>
-Output written on "AM207 Report.pdf" (9 pages, 1141433 bytes).
+Output written on "AM207 Report.pdf" (9 pages, 1068602 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
+ 149 PDF objects out of 1000 (max. 8388607)
  111 compressed objects within 2 object streams
  27 named destinations out of 1000 (max. 500000)
  135 words of extra memory for PDF output out of 10000 (max. 10000000)
