@@ -1,0 +1,9 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Data}{}% 2
+\BOOKMARK [1][-]{section.3}{Model and Algorithm}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Assumption and Parameter Estimation}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Naive Bayes Model}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{First Order HMM \(Hidden Markov Model\)}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{Second Order HMM \(Hidden Markov Model\)}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Feature Representation}{}% 8
+\BOOKMARK [1][-]{section.5}{Model Comparison}{}% 9
