@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 MAY 2016 20:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 MAY 2016 20:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -923,7 +923,7 @@ Here is how much of TeX's memory you used:
  21964 multiletter control sequences out of 15000+600000
  33640 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,61p,1140b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,12n,61p,1137b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
@@ -932,7 +932,7 @@ ive/2015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2
 texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/urw/palatino/uplri8a.pfb>
-Output written on "AM207 Report.pdf" (9 pages, 1002614 bytes).
+Output written on "AM207 Report.pdf" (9 pages, 1001122 bytes).
 PDF statistics:
  141 PDF objects out of 1000 (max. 8388607)
  106 compressed objects within 2 object streams
