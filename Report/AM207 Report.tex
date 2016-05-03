@@ -210,9 +210,13 @@ $$\text{F-Measure} = \frac{2 \cdot precision \cdot recal}{precision+recall} $$
 \item \textbf{Accuracy:} the number of True Positives and True Negatives divided by the total number.
 $$\text{Accuracy} = \frac{\sum^N_i TP_i + TN_i}{Total}$$
 \end{itemize}
-Using the four metrics above to visualize the performance of our models, we plotted the performance heat map for different houses. Here we used the performance heat map of house C as an example:\\
-\textbf{heat map plot here}
-\\
+Using the four metrics above to visualize the performance of our models, we plotted the performance heat map for different houses. Here we used the performance heat map of house C as an example (see figure in next page).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=15cm]{model_comparison}
+\end{figure}
+
 Naive Bayes is the simplest model without taking time factor into account while HMM add temporal relations. However, from the result above, we did not see a significant performance improvement. This might be because HMM model needs more training data to accurately learn the parameters. 
 
 Also we noticed that the choice of feature representation strongly affects the recognition performance. It is hard to see when one activity ends and another one starts using raw data feature representation and it does not provide good information about the activity currently performed. For example, the observed open his laptop doing some work and then go to sleep without closing his laptop then the raw representation can indicate that the laptop is open long after the person finished using the laptop. The ChangePoint representation can solve this issue because it only indicates the moment the sensor changes its value, however, unless another sensor fired, it can not differentiate whether the person is currently doing the activity or already finished. LastSensor representation solved this issue and thus gives us the best results.  
