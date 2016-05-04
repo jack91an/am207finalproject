@@ -158,7 +158,7 @@ To visualize the performance of this Naive Bayes model, we plotted the prior pro
 In Naive Bayes model, we assumes all data points are independently and identically distributed. However, it is not true. The data we have are time series data and there exists a temporal correlation between consecutive time slices. A Hidden Markov Model (HMM) can be used to explore this scenario. In an HMM model, we have a series of observed outputs $X={x_1, x_2, ...,x_t}$ drawn from a series of hidden state $Y={y_1, y_2, ..,y_t}$. In this problem, X should be the observed sensor states and Y should be the activity states. The First Order HMM relies on the following three assumptions:
 \begin{itemize}
 \item \textbf{Limited Horizon Assumption:} the probability of being in a hidden state at time t depends only on the hidden state at time t-1.
-\item \textbf{Stationary Process Assumption:} the conditional distribution over next hidden state given current hidden state does not change over time. P
+\item \textbf{Stationary Process Assumption:} the conditional distribution over next hidden state given current hidden state does not change over time. 
 \item \textbf{Output Independence Assumption:} the output observation at time t is dependent
 only on the current hidden state.
 \end{itemize}
