@@ -1,10 +1,10 @@
 #### Final Project for AM207 - Harvard University Spring 2016 
 
-### Title:
+### Tittle:
 NOW I SEE YOU: Sensor Based Single User Activity Recognition 
 
 
-### Team Membes: 
+### Team Members: 
 - Xiaowen Chang (xiaowenchang@g.harvard.edu)
 - Siv Lu (blu@g.harvard.edu)
 - Jack Qian (fqian@g.harvard.edu)
