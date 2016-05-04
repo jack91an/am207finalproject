@@ -17,7 +17,8 @@ Activity recognition, which identifies the activity (eg. cooking, sleeping, read
 
 ### File Organization:
 
-- "code": contains ipython notebooks of all the code for data cleaning and model building.
+- "Code": contains ipython notebooks of all the code for data cleaning and model building.
+- "code": old ipython notebooks checkpoints.
 - "data": contains activites data and sensor data. 
-- "report": contains files for report using LaTeX
+- "Report": contains files for report using LaTeX
 - "submission": deliverable for course (poster and report)
