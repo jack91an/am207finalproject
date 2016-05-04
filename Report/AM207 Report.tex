@@ -222,6 +222,19 @@ Naive Bayes is the simplest model without taking time factor into account while 
 Also we noticed that the choice of feature representation strongly affects the recognition performance. It is hard to see when one activity ends and another one starts using raw data feature representation and it does not provide good information about the activity currently performed. For example, the observed open his laptop doing some work and then go to sleep without closing his laptop then the raw representation can indicate that the laptop is open long after the person finished using the laptop. The ChangePoint representation can solve this issue because it only indicates the moment the sensor changes its value. However, unless another sensor fired, it can not differentiate whether the person is currently doing the activity or already finished so it does not perform very well in Naive Bayes model. LastSensor representation solved this issue and thus improved the performance of Naive Bayes model.
 
 In terms of future work, more complex model like Hidden semi-Markov model, Conditional Random Fields, Neutral Network could be tried to improve the recognition performance. 
+\newpage
 
+  \begin{thebibliography}{1}
+
+  \bibitem{notes} Eunju Kim, Sumi Helal and Diane Cook {\em Human Activity Recognition and Pattern Discovery.}\\  \href{http://www.eecs.wsu.edu/~cook/pubs/pc10.pdf}{http://www.eecs.wsu.edu/~cook/pubs/pc10.pdf}
+
+  \bibitem{Dataset}  Tim Van Kasteren {\em Activity Recognition}\\ \href{https://sites.google.com/site/tim0306/codeFramework.zip?attredirects=0}{https://sites.google.com/site/tim0306/codeFramework.zip?attredirects=0}
+
+  \bibitem{Algo} Wikipedia {\em Viterbi Algorithm}\\ \href{https://en.wikipedia.org/wiki/Viterbi\_algorithm}{https://en.wikipedia.org/wiki/Viterbi\_algorithm}
+
+  \bibitem{AlgoNB} Wikipedia {\em Naive Bayes Classifier}\\ \href{https://en.wikipedia.org/wiki/Naive\_Bayes\_classifier}{https://en.wikipedia.org/wiki/Naive\_Bayes\_classifier}
+
+  \bibitem{Data Featires} Nawel Yala{\em Feature Extraction For Human Activity Recognition}\\ \href{https://hal.archives-ouvertes.fr/hal-01202168/file/INISTA\_Nawel\_Final.pdf}{https://hal.archives-ouvertes.fr/hal-01202168/file/INISTA\_Nawel\_Final.pdf}
+  \end{thebibliography}
 \end{document}
 	% line of code telling latex that your document is ending. If you leave this out, you'll get an error
