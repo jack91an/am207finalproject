@@ -9,7 +9,7 @@
 	% packages that allow mathematical formatting
 
 \usepackage{graphicx}
-	% package that allows you to include graphics
+	% package that allows you to include 
 
 \usepackage{setspace}
 	% package that allows you to change spacing
@@ -63,7 +63,7 @@
 %	LOGO SECTION
 %----------------------------------------------------------------------------------------
 
-\includegraphics[width=7cm]{logo.png}\\[2cm] 
+\includegraphics[width=7cm]{../plot/logo.png}\\[2cm] 
 \center % Center everything on the page
 %----------------------------------------------------------------------------------------
 %	HEADING SECTIONS
@@ -100,12 +100,12 @@ Activity Recognition, which identifies the activity (eg. cooking, sleeping, read
 In this project, supervised machine learning models were used for recognition of users' activity, therefore, labeled training data from sensors had to be collected. We used three online datasets with single user activity recorded in different houses. Sensors were installed in different places inside the house to gather the data needed for recognition. The floor plan of different houses is as following. The red boxes represent sensor nodes. It gives 1 when the sensor is firing and a 0 otherwise. 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=16cm]{data1}
+    \includegraphics[width=16cm]{../plot/data1}
 \end{figure}
 \newpage
 \begin{figure}[h]
     \centering
-    \includegraphics[width=14cm]{data2}
+    \includegraphics[width=14cm]{../plot/data2}
 \end{figure}
 To test our model performance, we left one day out as test data and the remaining days were used for training. To avoid overfitting, we used cross validation approach to cycle over all the days and report the average performance. 
 
@@ -126,7 +126,7 @@ The MLE estimator considers the parameter to be a constant and estimates a value
 \subsection{Naive Bayes Model}
 \begin{figure}[h]
     \centering
-\includegraphics[width=7cm]{NB}
+\includegraphics[width=7cm]{../plot/NB}
 \end{figure}
 Besides the conditional independence assumption, Naive Bayes Model also assumes all data points are independently and identically distributed, that is it doesn't consider the correlation between data points. 
 The joint probability over the testing data points:
@@ -141,24 +141,24 @@ By maximizing the product of the joint probability with respect to $y_{1:T} = \{
 To give you a sense of how the prior distribution looks like, we plot the prior probability $P(y= sleeping)$ over different time slots as below: \\
 \begin{figure}[h]
     \centering
-    \includegraphics[width=18cm]{sleeping_prior}
+    \includegraphics[width=18cm]{../plot/sleeping_prior}
 \end{figure}\\
 To visualize the performance of this Naive Bayes model, we plotted the prior probability, posterior probability and true probability of the activity 'go to bed' during different hours using our testing data. This plot could show us how did Naive Bayes model improved the prediction by taking observed sensor data into account.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=18cm]{NB_result}
+    \includegraphics[width=18cm]{../plot/NB_result}
 \end{figure}
 \subsection{First Order HMM (Hidden Markov Model)}
 \begin{figure}[h]
     \centering
-\includegraphics[width=7cm]{1hmm}
+\includegraphics[width=7cm]{../plot/1hmm}
 \end{figure}
 
 In Naive Bayes model, we assumes all data points are independently and identically distributed. However, it is not true. The data we have are time series data and there exists a temporal correlation between consecutive time slices. A Hidden Markov Model (HMM) can be used to explore this scenario. In an HMM model, we have a series of observed outputs $X={x_1, x_2, ...,x_t}$ drawn from a series of hidden state $Y={y_1, y_2, ..,y_t}$. In this problem, X should be the observed sensor states and Y should be the activity states. The First Order HMM relies on the following three assumptions:
 \begin{itemize}
 \item \textbf{Limited Horizon Assumption:} the probability of being in a hidden state at time t depends only on the hidden state at time t-1.
-\item \textbf{Stationary Process Assumption:} the conditional distribution over next hidden state given current hidden state does not change over time. P
+\item \textbf{Stationary Process Assumption:} the conditional distribution over next hidden state given current hidden state does not change over time. 
 \item \textbf{Output Independence Assumption:} the output observation at time t is dependent
 only on the current hidden state.
 \end{itemize}
@@ -173,7 +173,7 @@ To solve the argmax equation, naively, we could try every possible assignment to
 
 \begin{figure}[h]
     \centering
-\includegraphics[width=7cm]{2hmm}
+\includegraphics[width=7cm]{../plot/2hmm}
 \end{figure}
 
 The order of a HMM is the length of history upon which the probabilities of the possible values of the next state depend. The only difference between 1st and 2nd order HMM is that 2nd order HMM depends upon the two previous states. Thus, the probability of transitioning to a new state depends not only on the current state, but also on the previous state. This allows a more realistic context dependence.
@@ -189,7 +189,7 @@ $$\hat{b}_{ij,n} = \frac{\sum_{t=1}^T x_{tn}\mathbf{1}\{\{y_t,y_{t-1}\}=\{i, j\}
 \section{Feature Representation}
 \begin{figure}[h]
 \centering
-\includegraphics[width=14cm]{feature}
+\includegraphics[width=14cm]{../plot/feature}
 \caption{ (a) Raw; (b) ChangePoint; (c) LastSensor}
 \end{figure}
 Besides models, we also tried different feature representation to improve our prediction performance. 
@@ -210,11 +210,11 @@ $$\text{F-Measure} = \frac{2 \cdot precision \cdot recal}{precision+recall} $$
 \item \textbf{Accuracy:} the number of True Positives and True Negatives divided by the total number.
 $$\text{Accuracy} = \frac{\sum^N_i TP_i + TN_i}{Total}$$
 \end{itemize}
-Using the four metrics above to visualize the performance of our models, we plotted the performance heat map for different houses. Here we used the performance heat map of house C as an example (see figure in next page).
+Using the four metrics above to visualize the performance of our models, we plotted the performance heat map for different houses. Here we used the performance heat map of house A as an example (see figure in next page).
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=15cm]{result}
+\includegraphics[width=15cm]{../plot/result}
 \end{figure}
 
 Naive Bayes is the simplest model without taking time factor into account while HMM add temporal relations. However, from the result above, we did not see a significant performance improvement. This might be because HMM model needs more training data to accurately learn the parameters. 
@@ -222,6 +222,19 @@ Naive Bayes is the simplest model without taking time factor into account while 
 Also we noticed that the choice of feature representation strongly affects the recognition performance. It is hard to see when one activity ends and another one starts using raw data feature representation and it does not provide good information about the activity currently performed. For example, the observed open his laptop doing some work and then go to sleep without closing his laptop then the raw representation can indicate that the laptop is open long after the person finished using the laptop. The ChangePoint representation can solve this issue because it only indicates the moment the sensor changes its value. However, unless another sensor fired, it can not differentiate whether the person is currently doing the activity or already finished so it does not perform very well in Naive Bayes model. LastSensor representation solved this issue and thus improved the performance of Naive Bayes model.
 
 In terms of future work, more complex model like Hidden semi-Markov model, Conditional Random Fields, Neutral Network could be tried to improve the recognition performance. 
+\newpage
 
+  \begin{thebibliography}{1}
+
+  \bibitem{notes} Eunju Kim, Sumi Helal and Diane Cook {\em Human Activity Recognition and Pattern Discovery.}\\  \href{http://www.eecs.wsu.edu/~cook/pubs/pc10.pdf}{http://www.eecs.wsu.edu/~cook/pubs/pc10.pdf}
+
+  \bibitem{Dataset}  Tim Van Kasteren {\em Activity Recognition}\\ \href{https://sites.google.com/site/tim0306/codeFramework.zip?attredirects=0}{https://sites.google.com/site/tim0306/codeFramework.zip?attredirects=0}
+
+  \bibitem{Algo} Wikipedia {\em Viterbi Algorithm}\\ \href{https://en.wikipedia.org/wiki/Viterbi\_algorithm}{https://en.wikipedia.org/wiki/Viterbi\_algorithm}
+
+  \bibitem{AlgoNB} Wikipedia {\em Naive Bayes Classifier}\\ \href{https://en.wikipedia.org/wiki/Naive\_Bayes\_classifier}{https://en.wikipedia.org/wiki/Naive\_Bayes\_classifier}
+
+  \bibitem{Data Featires} Nawel Yala{\em Feature Extraction For Human Activity Recognition}\\ \href{https://hal.archives-ouvertes.fr/hal-01202168/file/INISTA\_Nawel\_Final.pdf}{https://hal.archives-ouvertes.fr/hal-01202168/file/INISTA\_Nawel\_Final.pdf}
+  \end{thebibliography}
 \end{document}
 	% line of code telling latex that your document is ending. If you leave this out, you'll get an error
