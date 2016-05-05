@@ -1,6 +1,6 @@
 #### Final Project for AM207 - Harvard University Spring 2016 
 
-### Tittle:
+### Title:
 NOW I SEE YOU: Sensor Based Single User Activity Recognition 
 
 
@@ -22,3 +22,6 @@ Activity recognition, which identifies the activity (eg. cooking, sleeping, read
 - "data": contains activites data and sensor data. 
 - "Report": contains files for report using LaTeX
 - "submission": deliverable for course (poster and report)
+
+### Link to Video:
+https://www.youtube.com/watch?v=pe1r5tg4RVQ
